@@ -13,6 +13,14 @@ This repository is a collection of AI skills for LLMs and Agents.
 - [riverpod-testing](./skills/riverpod-testing/SKILL.md): Unit and widget testing strategies.
 - [riverpod-advanced](./skills/riverpod-advanced/SKILL.md): Advanced patterns and best practices.
 
+### Slang (Flutter i18n)
+- [flutter-slang-setup](./skills/flutter-slang-setup/SKILL.md): Initial setup and basic usage.
+- [flutter-slang-translations](./skills/flutter-slang-translations/SKILL.md): String interpolation, lists, maps, and dynamic keys.
+- [flutter-slang-structuring](./skills/flutter-slang-structuring/SKILL.md): Namespaces, fallback, lazy loading, and DI.
+- [flutter-slang-l10n-interfaces](./skills/flutter-slang-l10n-interfaces/SKILL.md): Formatting (dates, numbers) and interfaces.
+- [flutter-slang-plurals-contexts](./skills/flutter-slang-plurals-contexts/SKILL.md): Pluralization and custom contexts (gender, etc).
+- [flutter-slang-config-testing](./skills/flutter-slang-config-testing/SKILL.md): Configuration, testing, and CLI tools.
+
 ## Structure
 
 - `skills/`: Contains the definitions and source code for various AI skills.
