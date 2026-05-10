@@ -1,7 +1,6 @@
 ---
 name: riverpod-advanced
 description: "Riverpod 3 advanced: auto-dispose, select, scoping, observers, retry, mutations, debounce."
-version: 1.0.0
 ---
 
 # Riverpod Advanced Features

@@ -1,7 +1,6 @@
 ---
 name: riverpod-combining-providers
 description: "Riverpod 3 combining providers: dependency chains."
-version: 1.0.0
 ---
 
 # Combining Providers (Code Generation)

@@ -1,7 +1,6 @@
 ---
 name: riverpod-testing
 description: "Riverpod 3 testing: unit tests, widget tests, overrides, mocking."
-version: 1.0.0
 ---
 
 # Testing Riverpod Providers (Code Generation)

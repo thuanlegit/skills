@@ -1,7 +1,6 @@
 ---
 name: riverpod-providers
 description: "Riverpod 3 provider types with riverpod_generator."
-version: 1.0.0
 ---
 
 # Riverpod Provider Types (Code Generation)

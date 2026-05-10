@@ -1,7 +1,6 @@
 ---
 name: riverpod-setup
 description: "Riverpod 3 setup with riverpod_generator for Flutter projects."
-version: 1.0.0
 ---
 
 # Riverpod 3 Setup (Code Generation)

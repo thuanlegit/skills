@@ -1,7 +1,6 @@
 ---
 name: riverpod-consumers
 description: "Riverpod 3 widget integration: ConsumerWidget, ref.watch/read/listen."
-version: 1.0.0
 ---
 
 # Riverpod Consumers — Widgets That Use Providers

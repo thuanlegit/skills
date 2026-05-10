@@ -1,7 +1,6 @@
 ---
 name: riverpod-family
 description: "Riverpod 3 family providers — passing arguments to providers."
-version: 1.0.0
 ---
 
 # Riverpod Family Providers (Code Generation)
