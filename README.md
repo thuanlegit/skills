@@ -27,6 +27,14 @@ This repository is a collection of AI skills for LLMs and Agents.
 - [go-router-nested](./skills/go-router-nested/SKILL.md): Nested navigation with ShellRoute and StatefulShellRoute.
 - [go-router-type-safe](./skills/go-router-type-safe/SKILL.md): Compile-time safe routing with code generation.
 
+### Supabase (Flutter)
+- [flutter-supabase-setup](./skills/flutter-supabase-setup/SKILL.md): Project setup and client initialization.
+- [flutter-supabase-auth](./skills/flutter-supabase-auth/SKILL.md): User authentication and session management.
+- [flutter-supabase-db](./skills/flutter-supabase-db/SKILL.md): Database operations and CRUD.
+- [flutter-supabase-realtime](./skills/flutter-supabase-realtime/SKILL.md): Real-time database subscriptions.
+- [flutter-supabase-functions](./skills/flutter-supabase-functions/SKILL.md): Edge Functions invocation.
+- [flutter-supabase-storage](./skills/flutter-supabase-storage/SKILL.md): File storage and management.
+
 ## Structure
 
 - `skills/`: Contains the definitions and source code for various AI skills.
