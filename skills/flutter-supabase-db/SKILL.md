@@ -1,6 +1,6 @@
 ---
 name: flutter-supabase-db
-description: Postgres database operations for Supabase in Flutter. Use when Gemini CLI needs to perform CRUD operations, filtering, or sorting on database tables.
+description: Postgres database operations for Supabase in Flutter. Use when the agent needs to perform CRUD operations, filtering, or sorting on database tables.
 ---
 
 # Supabase Database (CRUD)

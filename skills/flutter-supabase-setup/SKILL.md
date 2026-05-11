@@ -1,6 +1,6 @@
 ---
 name: flutter-supabase-setup
-description: Project setup and initialization for Supabase in Flutter. Use when Gemini CLI needs to configure the Supabase client or initialize the SDK in a Flutter app.
+description: Project setup and initialization for Supabase in Flutter. Use when the agent needs to configure the Supabase client or initialize the SDK in a Flutter app.
 ---
 
 # Supabase Setup in Flutter

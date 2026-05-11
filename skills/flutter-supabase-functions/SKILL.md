@@ -1,6 +1,6 @@
 ---
 name: flutter-supabase-functions
-description: Invoking Supabase Edge Functions in Flutter. Use when Gemini CLI needs to call server-side logic (Deno functions) from the Flutter client.
+description: Invoking Supabase Edge Functions in Flutter. Use when the agent needs to call server-side logic (Deno functions) from the Flutter client.
 ---
 
 # Supabase Edge Functions in Flutter

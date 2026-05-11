@@ -1,6 +1,6 @@
 ---
 name: flutter-supabase-realtime
-description: Realtime database subscriptions for Supabase in Flutter. Use when Gemini CLI needs to listen to Postgres changes (INSERT, UPDATE, DELETE) in real-time.
+description: Realtime database subscriptions for Supabase in Flutter. Use when the agent needs to listen to Postgres changes (INSERT, UPDATE, DELETE) in real-time.
 ---
 
 # Supabase Realtime in Flutter

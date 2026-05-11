@@ -1,6 +1,6 @@
 ---
 name: flutter-supabase-auth
-description: User authentication and session management for Supabase in Flutter. Use when Gemini CLI needs to implement sign-up, sign-in, auth state listening, or sign-out logic.
+description: User authentication and session management for Supabase in Flutter. Use when the agent needs to implement sign-up, sign-in, auth state listening, or sign-out logic.
 ---
 
 # Supabase Auth in Flutter
