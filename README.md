@@ -21,6 +21,12 @@ This repository is a collection of AI skills for LLMs and Agents.
 - [flutter-slang-plurals-contexts](./skills/flutter-slang-plurals-contexts/SKILL.md): Pluralization and custom contexts (gender, etc).
 - [flutter-slang-config-testing](./skills/flutter-slang-config-testing/SKILL.md): Configuration, testing, and CLI tools.
 
+### GoRouter (Flutter)
+- [go-router-setup](./skills/go-router-setup/SKILL.md): Setup, basic routing, and core navigation methods.
+- [go-router-redirection](./skills/go-router-redirection/SKILL.md): Auth guards, redirection logic, and error handling.
+- [go-router-nested](./skills/go-router-nested/SKILL.md): Nested navigation with ShellRoute and StatefulShellRoute.
+- [go-router-type-safe](./skills/go-router-type-safe/SKILL.md): Compile-time safe routing with code generation.
+
 ## Structure
 
 - `skills/`: Contains the definitions and source code for various AI skills.
@@ -31,4 +37,4 @@ This repository is a collection of AI skills for LLMs and Agents.
 - Improve documentation and examples for each skill.
 
 ---
-*Last updated: May 10, 2026*
+*Last updated: May 11, 2026*
