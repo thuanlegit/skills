@@ -108,4 +108,12 @@ ref.watch(userProvider).when(
   loading: () => const CircularProgressIndicator(),
   error: (err, stack) => Text('Error: $err'),
 );
+
+---
+
+## Best Practices
+
+- **Keep Logic Pure**: Providers should manage state and logic. Avoid putting navigation, snackbars, or UI-specific code inside a provider.
+- **Avoid ref.read in build**: Use `ref.watch` in `build`. Use `ref.read` only in event handlers or lifecycle methods.
+- **Select for Performance**: Use `.select` to watch only the properties that affect a specific widget's build.
 ```

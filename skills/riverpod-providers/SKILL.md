@@ -97,3 +97,15 @@ class UserNotifier extends _$UserNotifier {
 - Access family args via `arg` property (e.g., `arg.id`)
 - Access `ref` via `this.ref` anywhere in the class
 - **Never** put logic in constructor — use `build()` instead
+
+---
+
+## Legacy Providers (Avoid)
+
+Avoid these legacy types in new code. In Riverpod 3.0, they are moved to `package:riverpod/legacy.dart`:
+
+- `StateProvider`
+- `StateNotifierProvider`
+- `ChangeNotifierProvider`
+
+**Use instead:** `@riverpod` with standard functional or `Notifier`/`AsyncNotifier` classes.

@@ -9,7 +9,7 @@ description: "Riverpod 3 setup with riverpod_generator for Flutter projects."
 
 ```bash
 flutter pub add flutter_riverpod riverpod_annotation
-flutter pub add dev:riverpod_generator dev:build_runner
+flutter pub add dev:riverpod_generator dev:build_runner dev:custom_lint dev:riverpod_lint
 ```
 
 ## Wrap App with ProviderScope
@@ -21,6 +21,14 @@ void main() {
   );
 }
 ```
+
+## Project Structure
+
+Organize by **feature** rather than by type:
+- `features/auth/state/auth_provider.dart` (Recommended)
+- `providers/auth_provider.dart` (Legacy/Small apps)
+
+Keep logic pure: Providers should only manage state. Avoid putting navigation or UI-specific code inside a provider.
 
 ## Run Code Generation
 
