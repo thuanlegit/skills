@@ -110,12 +110,25 @@ t.greet(gender: GenderContext.female);
 
 ### Use existing enum
 
+Define the context modifier in your JSON, and import the enum in `slang.yaml`:
+
 ```yaml
-imports: ["package:my_app/my_enum.dart"]
-contexts:
-UserType:
-generate_enum: false
+# slang.yaml
+imports:
+  - 'package:my_app/my_enum.dart'
 ```
+
+```json
+// en.i18n.json
+{
+  "greet(context=UserType)": {
+    "admin": "Hello Admin",
+    "user": "Hello User"
+  }
+}
+```
+
+*Note: Global context configuration in `slang.yaml` is deprecated in v4; always use modifiers.*
 
 ## Multiple plurals in one sentence
 

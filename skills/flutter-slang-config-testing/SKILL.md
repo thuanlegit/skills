@@ -7,7 +7,7 @@ description: "Slang i18n: configuration reference, testing, CLI tools, tips"
 
 ## Configuration (slang.yaml)
 
-All settings optional:
+All settings optional. Note: `output_format` is removed in v4 (always generates multiple files).
 
 ```yaml
 base_locale: en
@@ -61,6 +61,19 @@ expect(kMaterialSupportedLanguages, contains(locale.languageCode));
 });
 ```
 
+## LLM & Context Notes
+
+Use `@@note` to provide context for translators or LLMs:
+
+```json
+{
+  "login": {
+    "@@note": "Used on the main login screen",
+    "title": "Welcome back!"
+  }
+}
+```
+
 ## CLI Reference
 
 ```bash
@@ -70,20 +83,16 @@ dart run slang watch
 
 # Analysis
 dart run slang analyze [--full] [--split]
+dart run slang apply        # automatically add missing translations from analysis
 dart run slang clean
 
 # Edit
-dart run slang edit add en key "value"
-dart run slang edit move oldPath newPath
-dart run slang edit copy oldPath newPath
-dart run slang edit delete key
-dart run slang edit outdated key
-
+...
 # Utilities
 dart run slang normalize [--locale=fr]
 dart run slang configure
 dart run slang stats
-dart run slang wip apply
+dart run slang wip apply    # move $wip strings to resource files
 
 # Migration
 dart run slang migrate arb source.arb dest.json
@@ -95,4 +104,5 @@ dart run slang migrate arb source.arb dest.json
 - **Sanitization**: reserved keywords get `k` prefix (`continue` → `kContinue`)
 - **Prototyping**: `t.$wip('Hello $name')` — then `dart run slang wip apply`
 - **Comments in JSON**: `@key` matching a real key → doc comment
-- **MCP Server**: `dart pub global activate slang_mcp` for LLM translations
+- **LLM Integration**: Use `@@note` for contextual translations.
+- **Slang MCP**: `dart pub global activate slang_mcp` to use the Slang MCP server with your LLM for automated translations and better code understanding.

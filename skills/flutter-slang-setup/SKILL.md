@@ -20,16 +20,16 @@ dev_dependencies:
 
 ## Quick Start
 
-**1. Create translation files** in `lib/i18n/`:
+**1. Create translation files** (explicit locale in filenames recommended):
 
 ```
 lib/i18n/
-  en.i18n.json
-  de.i18n.json
+  strings_en.i18n.json
+  strings_de.i18n.json
 ```
 
 ```json
-// en.i18n.json
+// strings_en.i18n.json
 {
   "hello": "Hello $name",
   "login": {
@@ -52,9 +52,9 @@ dart run build_runner build -d  # CI / initial checkout
 ```dart
 import 'package:my_app/i18n/strings.g.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  LocaleSettings.useDeviceLocale();
+  await LocaleSettings.useDeviceLocale(); // useDeviceLocaleSync() for synchronous
   runApp(TranslationProvider(child: MyApp()));
 }
 ```
@@ -80,9 +80,10 @@ String b = t.hello(name: 'Tom');
 ## Set Specific Locale
 
 ```dart
-LocaleSettings.setLocale(AppLocale.de);
-LocaleSettings.setLocaleRaw('de');
-LocaleSettings.useDeviceLocale();
+await LocaleSettings.setLocale(AppLocale.de); // Returns Future
+LocaleSettings.setLocaleSync(AppLocale.de);   // Synchronous
+LocaleSettings.setLocaleRaw('de');            // Returns Future
+LocaleSettings.useDeviceLocale();             // Returns Future
 ```
 
 ## CLI Commands
@@ -91,6 +92,7 @@ LocaleSettings.useDeviceLocale();
 dart run slang              # generate
 dart run slang watch        # auto-rebuild on change
 dart run slang analyze      # find missing/unused translations
+dart run slang apply        # add missing translations from analysis
 dart run slang normalize    # sort keys to match base locale
 dart run slang configure    # update iOS CFBundleLocalizations
 ```

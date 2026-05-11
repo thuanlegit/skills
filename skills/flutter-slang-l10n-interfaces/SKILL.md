@@ -87,12 +87,18 @@ showChange(t.onboarding.whatsNew.v2);
 ### Config attributes
 
 ```yaml
+# slang.yaml
 interfaces:
   PageData:
+    generate_mixin: true # true (default) generates a new mixin
     attributes:
       - String title
       - String? content
 ```
+
+Set `generate_mixin: false` if you want to use a manually defined mixin (must be imported in `imports`).
+
+*Note: Specifying paths for interfaces in `slang.yaml` is deprecated; use the `(interface=...)` modifier directly on keys.*
 
 ## Modifier Reference
 

@@ -30,6 +30,8 @@ t.errorDialogs.login.wrongPassword;
 
 Root namespace: use `_default` as namespace name.
 
+**Nested namespaces:** You can use multiple underscores for nested namespaces (e.g., `feature1_sub1_en.i18n.json`) to create a deeper tree structure.
+
 ## Fallback Strategy
 
 ```yaml
